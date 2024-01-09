@@ -2,15 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",
+      "src": "*.js",
       "use": "@now/node-server"
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.js" }
-  ],
-  "env": {
-    "PORT": 3000,
-    "mongoDBURL": "mongodb+srv://root:root@book-store-mern.fai9vts.mongodb.net/books-collection?retryWrites=true&w=majority"
-  }
+    { "src": "/(.*)", "dest": "/" }
+  ]
 }
