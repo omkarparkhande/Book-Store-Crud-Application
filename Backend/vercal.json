@@ -1,12 +1,16 @@
 {
-    "version":2,
-    "builds": [
-      { "src": "index.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-        {
-          "src": "/(.*)",
-          "dest": "/"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ],
+  "env": {
+    "PORT": 3000, // Set the desired port
+    "mongoDBURL": "mongodb+srv://root:root@book-store-mern.fai9vts.mongodb.net/books-collection?retryWrites=true&w=majority"
   }
+}
