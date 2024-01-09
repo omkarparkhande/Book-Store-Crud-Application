@@ -10,7 +10,7 @@
     { "src": "/(.*)", "dest": "/index.js" }
   ],
   "env": {
-    "PORT": 3000, // Set the desired port
+    "PORT": 3000,
     "mongoDBURL": "mongodb+srv://root:root@book-store-mern.fai9vts.mongodb.net/books-collection?retryWrites=true&w=majority"
   }
 }
